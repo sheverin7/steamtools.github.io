@@ -126,7 +126,7 @@ angular.module('valueApp', ['ui.bootstrap', 'vcRecaptcha'])
 	$scope.iconLimit = 54;
 	$scope.useTable = true;
 
-	$http.get('https://data.steam.tools/data/currency.json').then(({data}) => {
+	$http.get('https://cdn.steam.tools/data/currency.json').then(({data}) => {
 		var count = 0;
 		for (var i = 0; i < $scope.CDATA.length; i++) {
 			var code = $scope.CDATA[i].name;
