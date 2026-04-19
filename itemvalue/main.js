@@ -413,9 +413,8 @@ angular.module('valueApp', ['ui.bootstrap', 'vcRecaptcha'])
 
 	// Create the table
 	$scope.table = $('#item_table').DataTable({
-		dom: "t<'bottomRow'lip>",
-		pageLength: 25,
-		lengthMenu: [25, 50, 100, 200, 500],
+		dom: "t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+		pageLength: 40,
 		autoWidth: false,
 		scrollX: true,
 		scrollY: "auto",
